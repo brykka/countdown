@@ -1,4 +1,5 @@
 require 'Date'
+require 'launchy'
 
 # days = Date.strptime('10-06-2019', '%m-%d-%Y') - Date.today
 
@@ -39,8 +40,7 @@ until feeling == 'q'
     puts '~~~~~~~~~~~~~~~~~~~~~~~~~~'
     puts 'distractions are limitless'
     puts '~~~~~~~~~~~~~~~~~~~~~~~~~~'
-
-    distraction = gets.chomp
+    Launchy.open('https://jezebel.com/')
 
 
   when 'o'
