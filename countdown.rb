@@ -3,7 +3,7 @@ require 'launchy'
 
 # days = Date.strptime('10-06-2019', '%m-%d-%Y') - Date.today
 
-start = Date.new(2019, 7, 6).yday
+start = Date.today.yday
 finish = Date.new(2019, 10, 6).yday
 today = Date.today.yday
 percentage = 100 * (today - start) / (finish - start)
