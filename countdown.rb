@@ -40,8 +40,7 @@ until feeling == 'q'
     puts '~~~~~~~~~~~~~~~~~~~~~~~~~~'
     puts 'distractions are limitless'
     puts '~~~~~~~~~~~~~~~~~~~~~~~~~~'
-    Launchy.open('https://jezebel.com/')
-
+    Launchy.open('https://www.google.com/search?q=cute+cat+videos&oq=cute+cat+vi&aqs=chrome.0.0j69i57j0l4.4705j0j1&sourceid=chrome&ie=UTF-8')
 
   when 'o'
     puts '~~~~~~~~~~~~~~~'
@@ -53,7 +52,6 @@ until feeling == 'q'
     puts 'ok Line message him, Zoom call him'
     puts '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
   end
-
 end
 
 
