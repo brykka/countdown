@@ -3,14 +3,19 @@ require 'Date'
 # days = Date.strptime('10-06-2019', '%m-%d-%Y') - Date.today
 
 start = Date.new(2019, 7, 6).yday
-finish = Date.new(2019, 10, 6).yday
+finish = Date.new(2019, 10, 3).yday
 today = Date.today.yday
 percentage = 100 * (today - start) / (finish - start)
 days = finish - today
 
+if today == finish
+  puts "he is coming back!! that\'s 100\% done BABY!!"
+end
+
+
 puts '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
 puts "        There's only #{days.to_i} more days until Nick comes back!   "
-puts "                   That's #{percentage}\% complete                    "
+puts "                   That's #{percentage}\% complete!!                    "
 feeling = ''
 
 until feeling == 'q'
@@ -53,18 +58,4 @@ until feeling == 'q'
     puts 'ok Line message him, Zoom call him'
     puts '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
   end
-
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
